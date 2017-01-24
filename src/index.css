@@ -1,0 +1,98 @@
+.app {
+	width: 80%;
+	margin: auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.app .header {
+	text-align: center;
+	font-size: 2.5em;
+	margin: 30px 0;
+}
+
+.app form {
+	display: flex;
+	flex-direction: column;
+
+	padding-bottom: 30px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(66, 70, 70, 0.44);
+}
+
+.app form .inputs {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.app form .inputs .input {
+	width: 40%;
+	min-width: 200px;
+	text-align: center;
+}
+
+.app form .buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.app .results {
+	display: flex;
+	flex-direction: column;
+}
+
+.app .results .columns-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.app .results .columns-area .column {
+	display: flex;
+	flex-direction: column;
+
+	min-width: 400px;
+	width: 400px;
+
+	margin: 10px;
+
+	border-top: 1px solid rgba(66, 70, 70, 0.44);
+	border-right: 1px solid rgba(66, 70, 70, 0.31);
+	border-left: 1px solid rgba(66, 70, 70, 0.31);
+	border-bottom: 1px solid rgba(66, 70, 70, 0.18);
+}
+
+.app .results .columns-area .column .line {
+	display: flex;
+	flex-direction: row;
+}
+
+.app .results .columns-area .column .line:not(:last-child) {
+	border-bottom: 1px solid rgba(66, 70, 70, 0.18);
+}
+
+.app .results .columns-area .column .line > * {
+	padding: 5px;
+}
+
+.app .results .columns-area .column .line > *:not(:last-child) {
+	border-right: 1px solid rgba(66, 70, 70, 0.18);
+}
+
+.app .results .columns-area .column .line .person {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+.app .results .columns-area .column .line .questions {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
